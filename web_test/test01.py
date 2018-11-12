@@ -1,6 +1,8 @@
 import re
 
+
 def main():
+
     names=["age","1age","_age","!age","age123","2_age","#aage"]
     for name in names:
         ret=re.match(r"^[a-zA-Z_][a-zA-Z0-9]*$",name)
